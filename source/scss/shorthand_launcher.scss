@@ -1,0 +1,62 @@
+.shorthand_launcher-core_container {
+  position: relative;
+}
+
+.shorthand_launcher-core_content {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+}
+
+.shorthand_launcher-core_content h2 {
+  font-size: 5em;
+  width: 100%;
+  text-shadow: 3px 3px #000;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 16%;
+}
+
+.shorthand_launcher-button {
+  font-size: 1.8em;
+  background: #CD0000;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  width: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 0.3em 0;
+}
+
+.shorthand_launcher-button:hover {
+  background:#810000;
+}
+
+@include respondMinMax(651px, 850px) {
+  .shorthand_launcher-core_content h2 {
+    font-size: 4em;
+  }
+}
+
+@include respondMinMax(451px, 650px) {
+  .shorthand_launcher-core_content h2 {
+    font-size: 2.5em;
+  }
+}
+
+@include respondMinMax(351px, 450px) {
+  .shorthand_launcher-core_content h2 {
+    font-size: 2em;
+  }
+}
+@include respondMinMax(false, 350px) {
+  .shorthand_launcher-core_content h2 {
+    font-size: 1.5em;
+    margin-bottom: 4vw;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
